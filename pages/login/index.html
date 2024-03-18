@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Info form</title>
+</head>
+
+<body>
+    <header class="flex flex-center">Kontakt</header>
+    <form action="" id="input-form" class="flex flex-column flex-center">
+        <div class="flex flex-column m-b-20">
+            <label for="name" class="m-b-20">Ime</label>
+            <input class="form-element" type="text" id="name" name="name" placeholder="Ime" autocomplete="off">
+            <div class="error-element"></div>
+        </div>
+        <div class="flex flex-column m-b-20">
+            <label for="surname" class="m-b-20">Prezime</label>
+            <input class="form-element" type="text" id="surname" name="surname" placeholder="Prezime" autocomplete="off">
+            <div class="error-element"></div>
+        </div>
+        <div class="flex flex-column m-b-20">
+            <label for="email" class="m-b-20">Email</label>
+            <input class="form-element" type="text" id="email" name="email" placeholder="Email" autocomplete="off">
+            <div class="error-element"></div>
+        </div>
+        <div class="flex flex-column m-b-20">
+            <label for="details" class="m-b-20">Detalji</label>
+            <textarea class="form-element" id="details" name="details" cols="20" rows="10"
+                autocomplete="off"></textarea>
+            <div class="error-element"></div>
+        </div>
+        <div class="flex flex-space-between m-b-20">
+            <label for="newsletter">Pretplati se na newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+        </div>
+        <button type="submit">Kreni</button>
+    </form>
+</body>
+
+</html>
